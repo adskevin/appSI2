@@ -5,6 +5,10 @@ class TabelaUsuarioCampanhas{
     }
     
     montarTabela(usuarioCampanhas){
+
+        var title = document.querySelector("title");
+        title.innerHTML = "Usuário-Campanhas";
+
         var str=`
         <h2>Tabela de Usuario-Campanhas</h2>
         <a id="novo" href="#">Novo</a>

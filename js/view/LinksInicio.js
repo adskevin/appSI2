@@ -5,6 +5,10 @@ class LinksInicio{
     }
     
     exibirLinks(){
+
+        var title = document.querySelector("title");
+        title.innerHTML = "Página Inicial";
+
         var str=`
         <h2>Sistema de Cadastro</h2>
         <a id="usuarios" href="#">Usuários</a>

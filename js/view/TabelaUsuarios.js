@@ -5,6 +5,10 @@ class TabelaUsuarios{
     }
     
     montarTabela(usuarios){
+
+        var title = document.querySelector("title");
+        title.innerHTML = "Usuários";
+
         var str=`
         <h2>Tabela de Usuarios</h2>
         <a id="novo" href="#">Novo</a>

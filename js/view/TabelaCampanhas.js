@@ -5,6 +5,10 @@ class TabelaCampanhas{
     }
     
     montarTabela(campanhas){
+
+        var title = document.querySelector("title");
+        title.innerHTML = "Campanhas";
+
         var str=`
         <h2>Tabela de Campanhas</h2>
         <a id="novo" href="#">Novo</a>
