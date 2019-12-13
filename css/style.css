@@ -22,6 +22,10 @@ main{
     width: 600px;
 }
 
+#tabela_convites {
+    width: 331px;
+}
+
 #table {
     text-align: center;
     width: 100%;
@@ -30,3 +34,4 @@ main{
 #table>tr>td {
     overflow: hidden;
 }
+

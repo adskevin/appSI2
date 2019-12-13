@@ -41,5 +41,11 @@ class LinksInicio{
             usuarioCampanhaController.carregarUsuarioCampanhas();
         }
 
+        const linkConvites = document.querySelector("#convite");
+        linkConvites.onclick = function(){
+            const conviteController = new ConviteController();
+            conviteController.carregarConvites();
+        }
+
     }
 }
