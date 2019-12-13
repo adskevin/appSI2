@@ -1,0 +1,27 @@
+main{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 80px;
+}
+h2 {
+
+}
+
+#center {
+}
+
+#div_table {
+    width: 600px;
+    text-align: center;
+    margin: auto;
+}
+
+#table {
+    text-align: center;
+    width: 100%;
+}
+
+#table>tr>td {
+    overflow: hidden;
+}
+
