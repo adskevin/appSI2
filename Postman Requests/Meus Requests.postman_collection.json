@@ -110,7 +110,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:8080/api/campanha_usuario",
+			"url": "http://localhost:8080/api/convites",
 			"folder": "b5e7cd1e-eb02-4c09-ff91-72cae1a259c5",
 			"queryParams": [],
 			"preRequestScript": null,
@@ -123,13 +123,11 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1569783675279,
+			"time": 1575593933104,
 			"name": "Convite Lista Todos",
 			"description": "",
 			"collectionId": "fd789730-0ed1-4f2b-f0eb-910198411a32",
 			"responses": [],
-			"isFromCollection": true,
-			"collectionRequestId": "db812621-2bec-d6ef-ad96-c7f4759d08da",
 			"rawModeData": "{\n    \"id_campanha\": 4,\n    \"id_usuario\": 3\n}"
 		},
 		{
@@ -364,7 +362,7 @@
 			"id": "83c80462-7f0a-4784-92fa-50ccb72c8f45",
 			"headers": "",
 			"headerData": [],
-			"url": "http://localhost:8080/api/campanha/1",
+			"url": "http://localhost:8080/api/campanhas/1",
 			"folder": "40956eef-7886-0015-f1e7-ded07af19c08",
 			"queryParams": [],
 			"preRequestScript": null,
@@ -377,14 +375,11 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1569789589739,
+			"time": 1575593392869,
 			"name": "Campanha Encontra Por Id",
 			"description": "",
 			"collectionId": "fd789730-0ed1-4f2b-f0eb-910198411a32",
 			"responses": [],
-			"isFromCollection": true,
-			"collectionRequestId": "83c80462-7f0a-4784-92fa-50ccb72c8f45",
-			"folderId": "40956eef-7886-0015-f1e7-ded07af19c08",
 			"rawModeData": "{\n    \"nome_usuario\": \"KevinNovo3\",\n    \"nick\": \"zKewinNovo3\",\n\t\"senha\": \"12345\"\n}"
 		},
 		{
@@ -602,6 +597,7 @@
 			"headers": "",
 			"headerData": [],
 			"url": "http://localhost:8080/api/campanha_usuario/4",
+			"folder": "d8a7c115-4070-250c-ff87-28cb7dc54507",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
