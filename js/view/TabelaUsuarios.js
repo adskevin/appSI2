@@ -9,7 +9,7 @@ class TabelaUsuarios{
         <h2>Tabela de Usuarios</h2>
         <a id="novo" href="#">Novo</a>
         <div id="center">
-        <div id="div_table">
+        <div class="div_table" id="tabela_usuarios">
 
         <table id="table">
             <tr>

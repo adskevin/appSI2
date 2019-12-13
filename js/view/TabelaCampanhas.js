@@ -9,7 +9,7 @@ class TabelaCampanhas{
         <h2>Tabela de Campanhas</h2>
         <a id="novo" href="#">Novo</a>
         <div id="center">
-        <div id="div_table">
+        <div class="div_table" id="tabela_campanhas">
         <table>
             <tr>
                 <th>Id</th>

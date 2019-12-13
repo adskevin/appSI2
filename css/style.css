@@ -3,17 +3,23 @@ main{
     text-align: center;
     padding-top: 80px;
 }
-h2 {
 
-}
-
-#center {
-}
-
-#div_table {
+.div_table {
     width: 600px;
     text-align: center;
     margin: auto;
+}
+
+#tabela_campanhas {
+    width: 600px;
+}
+
+#tabela_usuario_campanhas {
+    width: 306px;
+}
+
+#tabela_usuarios {
+    width: 600px;
 }
 
 #table {
@@ -24,4 +30,3 @@ h2 {
 #table>tr>td {
     overflow: hidden;
 }
-
