@@ -11,13 +11,14 @@ class LinksInicio{
 
         var str=`
         <h2>Sistema de Cadastro</h2>
-        <a id="usuarios" href="#">Usuários</a>
-        <br>     
-        <a id="campanhas" href="#">Campanhas</a>
         <br>
-        <a id="usuario_campanha" href="#">Usuário_Campanha</a>
+        <button type="button" class="btn btn-primary botoes_link_inicio" id="usuarios">Usuários</button>
         <br>
-        <a id="convite" href="#">Convite</a>
+        <button type="button" class="btn btn-primary botoes_link_inicio" id="campanhas">Campanhas</button>
+        <br>
+        <button type="button" class="btn btn-primary botoes_link_inicio" id="usuario_campanha">Usuário-Campanhas</button>
+        <br>
+        <button type="button" class="btn btn-primary botoes_link_inicio" id="convite">Convites</button>
         `;
 
         var main = document.querySelector(this.seletor);

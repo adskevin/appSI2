@@ -11,16 +11,16 @@ class TabelaConvites{
 
         var str=`
         <h2>Tabela de Convites</h2>
-        <a id="novo" href="#">Novo</a>
-        <div id="center">
-        <div class="div_table" id="tabela_convites">
-        <table>
+        <button id="novo" class="btn btn-success">Novo Convite</button>
+        <div class="d-flex justify-content-center">
+        <div>
+        <table class="table table-striped">
             <tr>
-                <th>Id</th>
-                <th>Usuario</th>
-                <th>Campanha</th>
-                <th>Status</th>
-                <th colspan="2">Ação</th>
+                <th scope="col">Id</th>
+                <th scope="col">Usuario</th>
+                <th scope="col">Campanha</th>
+                <th scope="col">Status</th>
+                <th colspan="2" scope="col">Ação</th>
             </tr>
 
         ${convites.map(function(convite) {
@@ -36,10 +36,9 @@ class TabelaConvites{
             `;                
         }).join("")}
         </table>
-        <br>
         </div>        
         </div>
-        <a class="go_back" href="#">Voltar</a>        
+        <button class="btn btn-warning go_back">Voltar</button>     
         `;
 
         var tabela = document.querySelector(this.seletor);

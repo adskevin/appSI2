@@ -10,22 +10,28 @@ class FormUsuarios {
         }
         var str = `
         <h2>Formulario de Usuarios</h2>
+        <div class="d-flex justify-content-center">
+        
         <form id="formulario">
             <input type="hidden" id="idUsuario" value="${usuario.id_usuario}" />
-            <label for="txtnome">Nome:</label>
-            <input type="text" id="txtnome" value="${usuario.nome_usuario ?usuario.nome_usuario :''}">
-            <br />
-            <label for="txtnick">Nick:</label>
-            <input type="text" id="txtnick" value="${usuario.nick ?usuario.nick :''}">
-            <br />
-            <label for="txtsenha">Senha:</label>
-            <input type="text" id="txtsenha" value="${usuario.senha ?usuario.senha :''}">
-            <br />
-            <br />
-            <input type="submit" id="btnsalvar" value="Salvar">
-            <input type="reset" value="Cancelar">
+            <div class="form-group">
+                <label for="txtnome">Nome</label>
+                <input type="text" class="form-control" id="txtnome" placeholder="Digite o nome" value="${usuario.nome_usuario ?usuario.nome_usuario :''}">
+            </div>
+            <div class="form-group">
+                <label for="txtnick">Nick</label>
+                <input type="text" class="form-control" id="txtnick" placeholder="Digite o nick" value="${usuario.nick ?usuario.nick :''}">
+            </div>
+            <div class="form-group">
+                <label for="txtsenha">Senha</label>
+                <input type="text" class="form-control" id="txtsenha" placeholder="Digite a senha" value="${usuario.senha ?usuario.senha :''}">
+            </div>
+            <button type="submit" class="btn btn-success" id="btnsalvar">Salvar</button>
+            <button type="reset" class="btn btn-danger">Cancelar</button>
             <br />
         </form>
+
+        </div>
         `;
         var containerForm = document.querySelector(this.seletor);
         containerForm.innerHTML = str;

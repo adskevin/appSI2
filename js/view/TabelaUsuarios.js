@@ -11,16 +11,15 @@ class TabelaUsuarios{
 
         var str=`
         <h2>Tabela de Usuarios</h2>
-        <a id="novo" href="#">Novo</a>
-        <div id="center">
-        <div class="div_table" id="tabela_usuarios">
-
-        <table id="table">
+        <button id="novo" class="btn btn-success">Novo Usuario</button>
+        <div class="d-flex justify-content-center">
+        <div>
+        <table id="table" class="table table-striped">
             <tr>
-                <th>Id</th>
-                <th>Nome</th>
-                <th>Nick</th>
-                <th colspan="2">Ação</th>
+                <th scope="col">Id</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Nick</th>
+                <th colspan="2" scope="col">Ação</th>
             </tr>
 
         ${usuarios.map(function(usuario) {
@@ -35,10 +34,9 @@ class TabelaUsuarios{
             `;                
         }).join("")}
         </table>
-        <br>
         </div>
         </div>
-        <a class="go_back" href="#">Voltar</a>  
+        <button class="btn btn-warning go_back">Voltar</button>
         `;
 
         var tabela = document.querySelector(this.seletor);

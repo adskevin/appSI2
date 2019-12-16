@@ -11,16 +11,16 @@ class TabelaCampanhas{
 
         var str=`
         <h2>Tabela de Campanhas</h2>
-        <a id="novo" href="#">Novo</a>
-        <div id="center">
-        <div class="div_table" id="tabela_campanhas">
-        <table>
+        <button id="novo" class="btn btn-success">Nova Campanha</button>
+        <div class="d-flex justify-content-center">
+        <div>
+        <table class="table table-striped">
             <tr>
-                <th>Id</th>
-                <th>Nome</th>
-                <th>Descrição</th>
-                <th>Id_Mestre</th>
-                <th colspan="2">Ação</th>
+                <th scope="col">Id</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Descrição</th>
+                <th scope="col">Id_Mestre</th>
+                <th colspan="2" scope="col">Ação</th>
             </tr>
 
         ${campanhas.map(function(campanha) {
@@ -36,10 +36,9 @@ class TabelaCampanhas{
             `;                
         }).join("")}
         </table>
-        <br>
         </div>        
         </div>
-        <a class="go_back" href="#">Voltar</a>        
+        <button class="btn btn-warning go_back">Voltar</button>
         `;
 
         var tabela = document.querySelector(this.seletor);
