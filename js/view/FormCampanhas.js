@@ -10,22 +10,28 @@ class FormCampanhas {
         }
         var str = `
         <h2>Formulario de Campanhas</h2>
+        <div class="d-flex justify-content-center">
+        
         <form id="formulario">
             <input type="hidden" id="id_campanha" value="${campanha.id_campanha}" />
-            <label for="txtnome">Nome:</label>
-            <input type="text" id="txtnome" value="${campanha.nome_campanha ?campanha.nome_campanha :''}">
-            <br />
-            <label for="txtdescr">Descrição:</label>
-            <input type="text" id="txtdescr" value="${campanha.descr_campanha ?campanha.descr_campanha :''}">
-            <br />
-            <label for="txtidmestre">Id_Mestre:</label>
-            <input type="text" id="txtidmestre" value="${campanha.id_mestre ?campanha.id_mestre :''}">
-            <br />
-            <br />
-            <input type="submit" id="btnsalvar" value="Salvar">
-            <input type="reset" value="Cancelar">
+            <div class="form-group">
+                <label for="txtnome">Nome</label>
+                <input type="text" class="form-control" id="txtnome" placeholder="Digite o nome" value="${campanha.nome_campanha ?campanha.nome_campanha :''}">
+            </div>
+            <div class="form-group">
+                <label for="txtdescr">Descrição</label>
+                <input type="text" class="form-control" id="txtdescr" placeholder="Digite a descrição" value="${campanha.descr_campanha ?campanha.descr_campanha :''}">
+            </div>
+            <div class="form-group">
+                <label for="txtidmestre">Id Mestre</label>
+                <input type="text" class="form-control" id="txtidmestre" placeholder="Digite o id do mestre" value="${campanha.id_mestre ?campanha.id_mestre :''}">
+            </div>
+            <button type="submit" class="btn btn-success" id="btnsalvar">Salvar</button>
+            <button type="reset" class="btn btn-danger">Cancelar</button>
             <br />
         </form>
+
+        </div>
         `;
         var containerForm = document.querySelector(this.seletor);
         containerForm.innerHTML = str;

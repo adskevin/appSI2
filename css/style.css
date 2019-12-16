@@ -4,34 +4,17 @@ main{
     padding-top: 80px;
 }
 
-.div_table {
-    width: 600px;
-    text-align: center;
-    margin: auto;
+form {
+    width: 500px;
 }
 
-#tabela_campanhas {
-    width: 600px;
+#novo {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-#tabela_usuario_campanhas {
-    width: 306px;
-}
-
-#tabela_usuarios {
-    width: 600px;
-}
-
-#tabela_convites {
-    width: 331px;
-}
-
-#table {
-    text-align: center;
-    width: 100%;
-}
-
-#table>tr>td {
-    overflow: hidden;
+.botoes_link_inicio {
+    margin: 8px;
+    width: 200px;
 }
 

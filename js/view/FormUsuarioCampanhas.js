@@ -10,19 +10,25 @@ class FormUsuarioCampanhas {
         }
         var str = `
         <h2>Formulario de Usuario-Campanhas</h2>
+
+        <div class="d-flex justify-content-center">
+        
         <form id="formulario">
             <input type="hidden" id="id_campanha_usuario" value="${usuarioCampanha.id_campanha_usuario}" />
-            <label for="id_campanha">Campanha:</label>
-            <input type="text" id="id_campanha" value="${usuarioCampanha.id_campanha ?usuarioCampanha.id_campanha :''}">
-            <br />
-            <label for="id_usuario">Usuario:</label>
-            <input type="text" id="id_usuario" value="${usuarioCampanha.id_usuario ?usuarioCampanha.id_usuario :''}">
-            <br />
-            <br />
-            <input type="submit" id="btnsalvar" value="Salvar">
-            <input type="reset" value="Cancelar">
+            <div class="form-group">
+                <label for="id_campanha">Id Campanha</label>
+                <input type="text" class="form-control" id="id_campanha" placeholder="Digite o id da campanha" value="${usuarioCampanha.id_campanha ?usuarioCampanha.id_campanha :''}">
+            </div>
+            <div class="form-group">
+                <label for="id_usuario">Id Usuário</label>
+                <input type="text" class="form-control" id="id_usuario" placeholder="Digite o id do usuário" value="${usuarioCampanha.id_usuario ?usuarioCampanha.id_usuario :''}">
+            </div>
+            <button type="submit" class="btn btn-success" id="btnsalvar">Salvar</button>
+            <button type="reset" class="btn btn-danger">Cancelar</button>
             <br />
         </form>
+
+        </div>
         `;
         var containerForm = document.querySelector(this.seletor);
         containerForm.innerHTML = str;

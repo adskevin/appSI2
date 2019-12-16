@@ -10,22 +10,29 @@ class FormConvites {
         }
         var str = `
         <h2>Formulario de Convites</h2>
+
+        <div class="d-flex justify-content-center">
+        
         <form id="formulario">
             <input type="hidden" id="id_convite" value="${convite.id_convite}" />
-            <label for="id_usuario">Usuario:</label>
-            <input type="text" id="id_usuario" value="${convite.id_usuario ?convite.id_usuario :''}">
-            <br />
-            <label for="id_campanha">Campanha:</label>
-            <input type="text" id="id_campanha" value="${convite.id_campanha ?convite.id_campanha :''}">
-            <br />
-            <label for="status">Status:</label>
-            <input type="text" id="status" value="${convite.status ?convite.status :''}">
-            <br />
-            <br />
-            <input type="submit" id="btnsalvar" value="Salvar">
-            <input type="reset" value="Cancelar">
+            <div class="form-group">
+                <label for="id_usuario">Id Usuario</label>
+                <input type="text" class="form-control" id="id_usuario" placeholder="Digite o nome" value="${convite.id_usuario ?convite.id_usuario :''}">
+            </div>
+            <div class="form-group">
+                <label for="id_campanha">Id Campanha</label>
+                <input type="text" class="form-control" id="id_campanha" placeholder="Digite o id da campanha" value="${convite.id_campanha ?convite.id_campanha :''}">
+            </div>
+            <div class="form-group">
+                <label for="status">Status</label>
+                <input type="text" class="form-control" id="status" placeholder="Status pode ser 0 ou 1" value="${convite.status ?convite.status :''}">
+            </div>
+            <button type="submit" class="btn btn-success" id="btnsalvar">Salvar</button>
+            <button type="reset" class="btn btn-danger">Cancelar</button>
             <br />
         </form>
+
+        </div>
         `;
         var containerForm = document.querySelector(this.seletor);
         containerForm.innerHTML = str;
